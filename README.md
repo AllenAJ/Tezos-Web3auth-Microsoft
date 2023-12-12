@@ -1,1 +1,1 @@
-# Web3Auth (`@web3auth/no-modal`) x Tezos x Microsoft Login
+# Web3Auth x Tezos x Microsoft Login
