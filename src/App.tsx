@@ -7,7 +7,7 @@ import RPC from "./tezosRPC";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css"; 
 
-const clientId = "Client_ID";
+const clientId = "BLBNWswqgg8drweTanr7Hh43nRQwD5gTK4ieF4bOaWsoJdCVqnydwieDE6kAVrgL9oieQQ-Fs05RI4K-GnTWPu8";
 
 function App() {
   const [web3auth, setWeb3auth] = useState<Web3AuthNoModal | null>(null);
@@ -45,13 +45,13 @@ function App() {
         const openloginAdapter = new OpenloginAdapter({
           adapterSettings: {
             clientId:
-              "Client_ID", //Optional - Provide only if you haven't provided it in the Web3Auth Instantiation Code
+              "BLBNWswqgg8drweTanr7Hh43nRQwD5gTK4ieF4bOaWsoJdCVqnydwieDE6kAVrgL9oieQQ-Fs05RI4K-GnTWPu8", //Optional - Provide only if you haven't provided it in the Web3Auth Instantiation Code
             uxMode: "popup",
             loginConfig: {
               jwt: {
-                verifier: "Verifier_ID",
+                verifier: "345-tesdt",
                 typeOfLogin: "jwt",
-                clientId: "Verifier_Client_ID",
+                clientId: "64qOEG8JGyQd5h9NMOxnIYOOg9KIxdh2",
               },
             },
           },
