@@ -61,8 +61,12 @@ function App() {
         setWeb3auth(web3authInstance);
 
         await web3authInstance.init();
+        console.log("test");
         setProvider(web3authInstance.provider);
+        console.log("test1");
+
         if (web3authInstance.connectedAdapterName) {
+
           setLoggedIn(true);
           const userInfo = await web3authInstance.getUserInfo();
           setUser([userInfo]);
@@ -76,6 +80,8 @@ function App() {
           const rpc = new RPC(web3authInstance.provider as IProvider);
           const tezosKey = await rpc.getTezosKeyPair();
           setTezosKeyPair(tezosKey);
+          console.log(tezosKey);
+          
 
           const userAccount = await rpc.getAccounts();
           setUserAccounts(userAccount);
@@ -87,6 +93,8 @@ function App() {
 
         }
       } catch (error) {
+        console.log("test1222");
+
         console.error(error);
         setLoading(false); // Set loading to false in case of an error
 
@@ -216,7 +224,7 @@ function App() {
 
   return (
     <div className="container mt-4">
-
+{
       <main>
         {loggedIn ? loggedInView : unloggedInView}
 
