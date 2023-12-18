@@ -8,7 +8,7 @@ import { hex2buf } from "@taquito/utils";
 import * as tezosCrypto from "@tezos-core-tools/crypto-utils";
 import { IProvider } from "@web3auth/base";
 
-const tezos = new TezosToolkit("https://ghostnet.ecadinfra.com");
+const tezos = new TezosToolkit("https://rpc.tzbeta.net/");
 export default class TezosRpc {
   private provider: IProvider;
 
