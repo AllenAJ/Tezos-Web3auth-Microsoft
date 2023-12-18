@@ -216,9 +216,7 @@ function App() {
 
   return (
     <div className="container mt-4">
-{loading ? (
-  <p>Loading...</p>
-) : (
+
       <main>
         {loggedIn ? loggedInView : unloggedInView}
 
@@ -226,7 +224,7 @@ function App() {
           <p className="m-0">Logged in Successfully!</p>
         </div>
       </main>
-      )}
+      }
       <footer className="text-center text-muted mt-4">
         <small>Made with ❤️ by Allen</small>
       </footer>
